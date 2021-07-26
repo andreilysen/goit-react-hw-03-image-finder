@@ -1,6 +1,10 @@
 /*
 * Стили компонента Buton (Load more)
 */
+.loadButton {
+  text-align: center;
+}
+
 .Button {
   padding: 8px 16px;
   border-radius: 2px;
