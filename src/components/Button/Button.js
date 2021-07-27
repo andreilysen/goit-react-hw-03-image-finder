@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import styles from "./button.module.css";
+import styles from "./Button.module.css";
 
 const Button = ({ onClickLoadMore }) => (
   <div className={styles.loadButton}>

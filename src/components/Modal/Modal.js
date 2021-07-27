@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import styles from "./modal.module.css";
+import styles from "./Modal.module.css";
 
 // const Modal = ({ image, query, onCloseModal }) => {
 //   console.log(`image`, image);
@@ -23,20 +23,21 @@ class Modal extends Component {
   componentDidMount() {
     window.addEventListener("keydown", this.EscCloseModal);
   }
-  componentDidUpdate() {
-    // window.removeEventListener("keydown", this.EscCloseModal);
+
+  componentWillUnmount() {
+    window.removeEventListener("keydown", this.EscCloseModal);
   }
 
   EscCloseModal = (event) => {
     if (event.key === "Escape") {
       this.props.onCloseModal();
-      window.removeEventListener("keydown", this.EscCloseModal);
+      // window.removeEventListener("keydown", this.EscCloseModal);
     }
   };
 
   clickCloseModal = (e) => {
     this.props.onCloseModal();
-    window.removeEventListener("keydown", this.EscCloseModal);
+    // window.removeEventListener("keydown", this.EscCloseModal);
   };
 
   render() {

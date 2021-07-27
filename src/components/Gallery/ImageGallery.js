@@ -2,7 +2,7 @@ import React from "react";
 import ImageGalleryItem from "./ImageGalleryItem";
 import PropTypes from "prop-types";
 
-import styles from "./gallery.module.css";
+import styles from "./Gallery.module.css";
 
 const ImageGallery = ({ images, onModal }) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./gallery.module.css";
+import styles from "./Gallery.module.css";
 import PropTypes from "prop-types";
 
 const ImageGalleryItem = ({ imageId, smallImg, onClick }) => {
